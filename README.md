@@ -2,6 +2,8 @@
 
 ## **Keynote:** Flink streaming platform:
 
+[Slide](https://www.slideshare.net/FlinkForward/flink-forward-san-francisco-2018-keynote-stephan-ewen-what-turns-stream-processing-from-a-tool-into-a-platform)
+
 - DA platform: paid version:
 
 - support for the versioned stateful deployment model, aka multiple version of a job can deployed at a time
@@ -14,6 +16,8 @@
 
 ## **Dell:** Pravega stream storage
 
+[Slide](https://www.slideshare.net/FlinkForward/flink-forward-san-francisco-2018-keynote-srikanth-satya-stream-processing-revolutionizing-big-data)
+
 - pravaga support long term storage aka support hot and cold storage.
 - stream writes partitioned by the user defined route key
 - dynamically scale partitions based on the incoming data
@@ -21,7 +25,7 @@
 
 ## **Google:** Apache Flink & Beam
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_5E9C03C3CBB9D39C470121DF563CEDEC02DEACC5FE56FA6AC3814E7C4AC8D781_1523419413212_ml-flow.png)
+[Slide](https://www.slideshare.net/FlinkForward/flink-forward-san-francisco-2018-keynote-anand-iyer-apache-flink-apache-beam-expanding-the-horizons-of-big-data)
 
 — Apache beam support multiple language abstraction.—
 
@@ -146,9 +150,7 @@ passtorm running single python process, good for map/ flatmap operations, not fo
 
 - money related jobs require sensitive SLAs.
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_5E9C03C3CBB9D39C470121DF563CEDEC02DEACC5FE56FA6AC3814E7C4AC8D781_1523419789892_uber-flink-architecture.png)
-
-- Business use cases:
+**Business use cases:**
 
 - online ML model update for the market places
 
@@ -162,7 +164,7 @@ passtorm running single python process, good for map/ flatmap operations, not fo
 
 - monitoring integration
 
-- Deployment:
+  **Deployment:**
 
 - all the streaming jobs runs in a dedicated yarn cluster
 
@@ -172,13 +174,15 @@ passtorm running single python process, good for map/ flatmap operations, not fo
 
 - deployment API abstraction to abstract yarn deployment
 
-- Operation:
+  **Operation:**
 
 - scale jobs dynamically based on the IO and resource usages.
 
 - maintain the common set of operational tooling and batch running for automate the operation.
 
 ## **Netflix:** Scaling Flink in the cloud s3
+
+[Slide](https://www.slideshare.net/FlinkForward/flink-forward-san-francisco-2018-steven-wu-scaling-flink-in-cloud)
 
 - S3 is the snapshot store for Netflix
 
@@ -250,6 +254,8 @@ passtorm running single python process, good for map/ flatmap operations, not fo
 
 ## **Lyft:** Bootstrapping the state in Flink
 
+[Slide](https://www.slideshare.net/FlinkForward/flink-forward-san-francisco-2018-gregory-fee-bootstrapping-state-in-apache-flink)
+
 - consistent feature generation and serving in a consistent pipeline.
 
 - Dryft: stream processing as a service.
@@ -264,9 +270,7 @@ passtorm running single python process, good for map/ flatmap operations, not fo
 
   ##### Solution:
 
-  
-
-  ###### stream Retention:
+###### stream Retention:
 
 - use the stream technology data to retain as long as you needed so that we can reprocess it if needed.
 
@@ -290,8 +294,6 @@ passtorm running single python process, good for map/ flatmap operations, not fo
 
 ## **Alibaba:** Common algorithm platform
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_5E9C03C3CBB9D39C470121DF563CEDEC02DEACC5FE56FA6AC3814E7C4AC8D781_1523420228598_alibaba-architecture.png)
-
 - Alibaba computing platform: a generic platform for computing needs.
 - low learning, less coding, more functionality  (design goal)
 - Alibaba computing platform called Alink !!!??  (attach pic)
@@ -302,6 +304,8 @@ passtorm running single python process, good for map/ flatmap operations, not fo
 
 ## **Uber:** Scaling Uber real-time optimization with Flink
 
+[Slide](https://www.slideshare.net/FlinkForward/flink-forward-san-francisco-2018-xingzhong-xu-scaling-ubers-realtime-optimization-with-apache-flink)
+
 - used in uber market place  (driver/ rider pricing, dynamic pricing, driver position processing)
 
 - Geo/ temporal event aggregation
@@ -310,7 +314,7 @@ passtorm running single python process, good for map/ flatmap operations, not fo
 
   ###### Challenges:
 
--  Event time ordering and Time sensitive output. Event spatial mapping and Locality Sensitive mapping.
+- Event time ordering and Time sensitive output. Event spatial mapping and Locality Sensitive mapping.
 
 - Events are not an isolated thing once you group by a dimensions.
 
